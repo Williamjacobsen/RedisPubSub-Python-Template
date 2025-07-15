@@ -25,10 +25,10 @@ class RedisManager:
         Subscribes to the specified Redis channels and listens for messages.
         Calls the optional callback function with the message channel.
 
-    Args:
-        channels (list): Redis channel names to subscribe to.
-        callback (function, optional): Function to call when a message is received.
-                                       Should accept three arguments: channel, data.
+        Args:
+            channels (list): Redis channel names to subscribe to.
+            callback (function, optional): Function to call when a message is received.
+                                        Should accept three arguments: channel, data.
 
         Raises:
             ValueError: If no channels are provided.
